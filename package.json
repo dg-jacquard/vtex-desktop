@@ -1,0 +1,24 @@
+{
+  "name": "yami-desktop",
+  "version": "1.0.0",
+  "description": "Yami Desktop App",
+  "author": "Dg Nechtan",
+  "main": "main.js",
+  "scripts": {
+    "start": "node ./node_modules/.bin/electron .",
+    "server": "node ./server",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "yami.1",
+    "mac": {
+      "category": "dashboard"
+    }
+  },
+  "dependencies": {
+    "electron": "^2.0.1",
+    "global": "^4.3.2",
+    "socket.io": "^2.1.1"
+  }
+}
